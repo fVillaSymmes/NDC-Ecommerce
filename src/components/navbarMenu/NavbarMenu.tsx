@@ -6,7 +6,7 @@ interface Props {
     text: string
 }
 
-export const LinkActivo = ({ text }: Props) => {
+export const NavbarMenu = ({ text }: Props) => {
     return (
         <>
             <li>
