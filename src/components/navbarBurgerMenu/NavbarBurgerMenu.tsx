@@ -7,6 +7,7 @@ export const NavbarBurgerMenu = ({
     children: React.ReactNode
 }) => {
     const burgerMenuRef = useRef<any>(null)
+    // Es necesario asignarle el tipo correcto a la Ref
     return (
         <>
             <div className='flex items-center'>
