@@ -1,7 +1,7 @@
 'use client'
 //Idealmente el navbar completo no debería ser use client. Solo los trocitos que así lo requieran
 import { useRef } from 'react'
-import { NavbarMenuItems } from '../navbarMenuItems/NavbarMenu'
+import { NavbarMenuItems } from '../navbarMenuItems/NavbarMenuItems'
 
 const navItems = [{ text: 'Tienda' }, { text: 'Contacto' }]
 
