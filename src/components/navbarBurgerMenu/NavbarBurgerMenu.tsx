@@ -6,8 +6,7 @@ export const NavbarBurgerMenu = ({
 }: {
     children: React.ReactNode
 }) => {
-    const menuHamburguesaRef = useRef<any>(null)
-
+    const burgerMenuRef = useRef<any>(null)
     return (
         <>
             <div className='flex items-center'>
@@ -16,7 +15,12 @@ export const NavbarBurgerMenu = ({
                     type='button'
                     className='inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:hidden'
                     onClick={() => {
-                        console.log('LIVE FOREVA')
+                        // Esta solución no funciona en el primer renderizado. probablemente porque el valor se inicializa como null. Revisar doc UseRef() y considerar recurrir a useEffect o useState
+                        burgerMenuRef.current.className.includes('hidden')
+                            ? (burgerMenuRef.current.className =
+                                  'w-full md:block md:w-auto')
+                            : (burgerMenuRef.current.className =
+                                  'w-full md:block md:w-auto hidden')
                     }}
                 >
                     <span className='sr-only'>Open main menu</span>
@@ -39,8 +43,7 @@ export const NavbarBurgerMenu = ({
             <div
                 className='w-full md:block md:w-auto hidden'
                 id='mobile-menu'
-                ref={menuHamburguesaRef}
-                //Este ref es por ahora el trozo del código que me evita hacer el navbar 'use Server'
+                ref={burgerMenuRef}
             >
                 <ul className='flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium'>
                     {children}
