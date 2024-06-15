@@ -6,7 +6,7 @@ interface Props {
     text: string
 }
 
-export const NavbarMenu = ({ text }: Props) => {
+export const NavbarMenuItems = ({ text }: Props) => {
     return (
         <>
             <li>

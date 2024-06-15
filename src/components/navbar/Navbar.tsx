@@ -1,7 +1,7 @@
 'use client'
 //Idealmente el navbar completo no debería ser use client. Solo los trocitos que así lo requieran
 import { useRef } from 'react'
-import { NavbarMenu } from '../navbarMenu/NavbarMenu'
+import { NavbarMenuItems } from '../navbarMenuItems/NavbarMenu'
 
 const navItems = [{ text: 'Tienda' }, { text: 'Contacto' }]
 
@@ -57,7 +57,7 @@ export const Navbar = () => {
                 >
                     <ul className='flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium'>
                         {navItems.map((navItem) => (
-                            <NavbarMenu key={navItem.text} {...navItem} />
+                            <NavbarMenuItems key={navItem.text} {...navItem} />
                         ))}
                     </ul>
                 </div>
