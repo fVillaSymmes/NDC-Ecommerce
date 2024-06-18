@@ -1,7 +1,7 @@
 import { NavbarMenuItems } from '../navbarMenuItems/NavbarMenuItems'
 import { NavbarBurgerMenu } from '../navbarBurgerMenu/NavbarBurgerMenu'
 
-const navItems = [{ text: 'Tienda' }, { text: 'Contacto' }]
+const navItems = [{ text: 'Fechas' }, { text: 'Tienda' }, { text: 'Contacto' }]
 
 export const Navbar = () => {
     return (
