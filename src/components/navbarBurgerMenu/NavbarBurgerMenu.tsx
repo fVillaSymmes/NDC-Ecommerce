@@ -1,4 +1,5 @@
 'use client'
+
 import { useState } from 'react'
 
 export const NavbarBurgerMenu = ({
@@ -10,7 +11,6 @@ export const NavbarBurgerMenu = ({
 
     function toggleBurgerMenu() {
         setIsOpen((open) => !open)
-        console.log(isOpen)
     }
 
     return (
