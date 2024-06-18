@@ -1,16 +1,16 @@
 'use client'
-import { useRef } from 'react'
+import { useState } from 'react'
 
 export const NavbarBurgerMenu = ({
     children,
 }: {
     children: React.ReactNode
 }) => {
-    const burgerMenuRef = useRef<any>()
-    // Es necesario asignarle el tipo correcto a la Ref
+    const [isOpen, setIsOpen] = useState(false)
 
     function toggleBurgerMenu() {
-        console.log(burgerMenuRef.current)
+        setIsOpen((open) => !open)
+        console.log(isOpen)
     }
 
     return (
@@ -40,9 +40,10 @@ export const NavbarBurgerMenu = ({
             </div>
 
             <div
-                className='w-full md:block md:w-auto hidden'
+                className={`w-full md:block md:w-auto ${
+                    isOpen ? '' : 'hidden'
+                }`}
                 id='mobile-menu'
-                ref={burgerMenuRef}
             >
                 <ul className='flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium'>
                     {children}
