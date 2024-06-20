@@ -1,6 +1,5 @@
 import { NavbarMenuItems } from "../navbarMenuItems/NavbarMenuItems";
 import { NavbarBurgerMenu } from "../navbarBurgerMenu/NavbarBurgerMenu";
-import { url } from "inspector";
 
 const navItems = [
   { text: "Fechas", url: "/fechas" },
