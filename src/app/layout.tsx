@@ -6,21 +6,21 @@ import { Navbar } from '../components/navbar/Navbar'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-    title: 'Niños del Cerro',
-    description: 'Landing page y e-commerce de Niños del Cerro',
+  title: 'Niños del Cerro',
+  description: 'Landing page y e-commerce de Niños del Cerro',
 }
 
 export default function RootLayout({
-    children,
+  children,
 }: Readonly<{
-    children: React.ReactNode
+  children: React.ReactNode
 }>) {
-    return (
-        <html lang='en'>
-            <body className={inter.className}>
-                <Navbar />
-                {children}
-            </body>
-        </html>
-    )
+  return (
+    <html lang='en'>
+      <body className={inter.className}>
+        <Navbar />
+        {children}
+      </body>
+    </html>
+  )
 }
