@@ -11,6 +11,8 @@ export const NavbarBurgerMenu = ({
 
   function toggleBurgerMenu() {
     setIsOpen((open) => !open)
+    // El burgerMenu debería cerrarse una vez se ha hecho click en alguna de las opciones que ofrece (a menos que sea un respectivo submenu)
+    // Es factible que haya que mudar el state al componente padre de NavbarMenuItems y NavbarBurgerMenu (Navbar) para que el estado cierre al hacer click en los link
   }
 
   return (
