@@ -6,18 +6,23 @@ export default function Fechas() {
         <li className='flex flex-col items-center gap-y-3 border-2 border-yellow-300'>
           <h2>01 de Agosto</h2>
           <p>Antofagasta</p>
-          <button>Entradas</button>
-          <hr />
+          <button className='rounded-none border-4 border-blue-900'>
+            Entradas
+          </button>
         </li>
         <li className='flex flex-col items-center gap-y-3 border-2 border-yellow-300'>
           <h2>02 de Agosto</h2>
           <p>Iquique</p>
-          <button>Entradas</button>
+          <button className='rounded-none border-4 border-blue-900'>
+            Entradas
+          </button>
         </li>
         <li className='flex flex-col items-center gap-y-3 border-2 border-yellow-300'>
           <h2>03 de Agosto</h2>
           <p>Arica</p>
-          <button>Entradas</button>
+          <button className='rounded-none border-4 border-blue-900'>
+            Entradas
+          </button>
         </li>
       </ul>
     </main>
