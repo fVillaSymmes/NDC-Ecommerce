@@ -12,7 +12,7 @@ export default function Contacto() {
               poder ayudarte con él.
             </p>
             <div className='mt-12'>
-              <h2 className='text-lg font-extrabold'>Email</h2>
+              <h2 className='text-lg font-extrabold'>E-mail</h2>
               <ul className='mt-3'>
                 <li className='flex items-center'>
                   <div className='flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#e6e6e6cf]'>
@@ -45,21 +45,21 @@ export default function Contacto() {
           <form className='ml-auo space-y-4'>
             <input
               type='text'
-              placeholder='Name'
+              placeholder='Nombre'
               className='w-full rounded-md border px-4 py-2.5 text-sm outline-[#007bff]'
             />
             <input
               type='email'
-              placeholder='Email'
+              placeholder='Correo electrónico'
               className='w-full rounded-md border px-4 py-2.5 text-sm outline-[#007bff]'
             />
             <input
               type='text'
-              placeholder='Subject'
-              className='w-full rounded-md border px-4 py-2.5 text-sm outline-[#007bff]'
+              placeholder='Asunto'
+              className='text-smh w-full rounded-md border px-4 py-2.5 outline-[#007bff]'
             />
             <textarea
-              placeholder='Message'
+              placeholder='Mensaje'
               rows={6}
               className='form-control w-full rounded-md border px-4 pt-2.5 text-sm outline-[#007bff]'
             ></textarea>
@@ -67,7 +67,7 @@ export default function Contacto() {
               type='button'
               className='w-full rounded-md bg-[#007bff] px-4 py-2.5 text-sm font-semibold text-white hover:bg-blue-600'
             >
-              Send
+              Enviar
             </button>
           </form>
         </div>
